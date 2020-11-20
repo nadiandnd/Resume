@@ -1,0 +1,382 @@
+.header{
+    background-color: blanchedalmond;
+    text-align: center;
+    padding: 30px;
+    margin-top: 35px;
+    font-family: "BBSans Regular",Helvetica,Arial,sans-serif;
+    letter-spacing: 5px;
+}
+
+.text-muted {
+    padding-right: 150px;
+    
+}
+div.bg-dark a:hover {
+    color: whitesmoke;
+}
+
+
+img.d-block{
+    position: relative;
+    left:50%;
+    transform: translate(-50%);
+    width: 255px;
+    height: 360px;
+    padding:20px;
+}
+
+a{
+    text-decoration: none;
+    color: grey;
+}
+
+#carouselExampleCaptions{
+    grid-template-columns: 1fr;
+}
+
+.carousel{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 10px;    
+    background-color: black;
+    padding: 10px;
+       
+}
+#top-information, #top-edu, #top-skills, #top-work {
+    position: relative;
+    top: -160px;
+    display: block;
+    height: 0;
+    width: 0;
+}
+
+.toplight{
+    background-color: whitesmoke;
+    color:rgb(85, 85, 85);
+    padding: 30px 70px;
+}
+
+.topdark{
+    background-color: silver;
+    color:rgb(85, 85, 85);
+    padding: 30px 70px;
+}
+
+.topblack{
+    background-color:black;
+    color:silver;
+    padding: 30px 80px;
+}
+
+.middle{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 50px;
+    background-color: whitesmoke;
+    padding: 0px 50px 60px 70px;
+    
+}
+
+.icon{
+    width: 50px;
+    height: 60px;
+    padding: 2px 2px 20px 2px;
+}
+
+table{     
+     
+    grid-gap: 40px;
+    padding: 30px;
+    font-size: 13px;
+    color: gray;
+    border: 3px solid grey;
+    border-radius: 30px;
+    text-align: center;
+    border-collapse: unset;
+}
+
+table:hover{
+    color:black;
+}
+
+
+.allianz_logo{
+    width: 150px;
+    margin: 6px;
+}
+
+.media-body{
+    padding: 30px;
+    color: dimgray;
+}
+
+#Education{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0px 50px 60px 50px;
+       
+}
+
+#Education a:hover{
+    color:rgb(85, 85, 85);
+    text-decoration: none;
+}
+
+#card1{
+    width: 16rem; font-size: 14px; margin: -39px 50px 10px 150px; color: rgb(80, 80, 80);
+}
+
+#card2{
+    width: 16rem; font-size: 14px; margin: -39px 80px 10px 70px; color: rgb(80, 80, 80);
+}
+
+
+#card1:hover{
+    
+    border: rgba(128, 128, 128, 0.336) solid 2.5px;
+    
+}
+#card2:hover{
+    
+    border: rgba(128, 128, 128, 0.336) solid 2.5px;
+    
+}
+
+#Skills{
+    letter-spacing: 1px;
+    font-size: 16px;
+}
+
+
+
+/* Timeline holder */
+ul.timeline {
+    list-style-type: none;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+ /* Timeline vertical line */
+ul.timeline:before {
+    content: ' ';
+    background: #fff;
+    display: inline-block;
+    position: absolute;
+    left: 16px;
+    width: 4px;
+    height: 100%;
+    z-index: 400;
+    border-radius: 1rem;
+}
+
+li.timeline-item {
+    margin: 20px 0;
+}
+
+/* Timeline item arrow */
+.timeline-arrow {
+    border-top: 0.5rem solid transparent;
+    border-right: 0.5rem solid #fff;
+    border-bottom: 0.5rem solid transparent;
+    display: block;
+    position: absolute;
+    left: 2rem;
+}
+
+/* Timeline item circle marker */
+li.timeline-item::before {
+    content: ' ';
+    background: #ddd;
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    left: 11px;
+    width: 14px;
+    height: 14px;
+    z-index: 400;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+
+/*
+*
+* ==========================================
+* FOR DEMO PURPOSES
+* ==========================================
+*
+*/
+body {
+    background: #E8CBC0;
+    background: -webkit-linear-gradient(to right, #E8CBC0, #636FA4);
+    background: linear-gradient(to right, #E8CBC0, #636FA4);
+    min-height: 100vh;
+}
+
+.text-gray {
+    color: #999;
+}
+
+footer{
+    background-color: silver;
+    color:rgb(85, 85, 85);
+    padding: 20px 70px;
+    border-top: solid 2px ivory; 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .text-muted {
+        padding-right: 800px;
+    }
+    .middle {
+        grid-template-columns: 1fr;
+    }
+    .carousel{
+        grid-template-columns: 1fr;
+    }
+    .allianz_logo{
+        width: 100px;
+        margin: 3px;
+    }
+    #Education{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    #card1, #card2{
+        padding: 5px;
+        margin: 30px 20px 20px 20px;
+    }
+    #Skills{
+        font-size: 14px;
+    }
+    footer{
+        grid-template-columns: 1fr;
+        text-align: center;
+        padding: 30px 100px;
+        
+    }
+   
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .text-muted {
+        padding-right: 800px;
+    }
+    .middle {
+        grid-template-columns: 1fr;
+    }
+    .carousel{
+        grid-template-columns: 1fr;
+    }
+    .allianz_logo{
+        width: 100px;
+        margin: 3px;
+    }
+    #Education{
+        grid-template-columns: 1fr;
+        padding: 20px 70px;
+    }
+    #card1, #card2{
+        padding: 5px;
+        margin: 30px 20px 20px 20px;
+    }
+    #Skills{
+        font-size: 14px;
+    }
+    
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .text-muted {
+        padding-right: 80px;
+    }
+    .middle {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .carousel{
+        grid-template-columns: 1fr 2fr;
+    }
+    .allianz_logo{
+        width: 150px;
+        margin: 6px;
+    }
+    #Education{
+        grid-template-columns: 1fr 1fr;
+    }
+    #card1{
+        width: 16rem; font-size: 14px; margin: -39px 50px 10px 150px;
+    }
+    
+    #card2{
+        width: 16rem; font-size: 14px; margin: -39px 80px 10px 70px;
+    }
+    #Skills{
+        font-size: 16px;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .text-muted {
+        padding-right: 100px;
+    }
+    .middle {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .carousel{
+        grid-template-columns: 1fr 2fr;
+    }
+    .allianz_logo{
+        width: 150px;
+        margin: 6px;
+    }
+    #Education{
+        grid-template-columns: 1fr 1fr;
+    }
+    #card1{
+        width: 16rem; font-size: 14px; margin: -39px 50px 10px 150px;
+    }
+    
+    #card2{
+        width: 16rem; font-size: 14px; margin: -39px 80px 10px 70px;
+    }
+    #Skills{
+        font-size: 16px;
+    }
+
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) { 
+    .text-muted {
+        padding-right: 150px;
+    }
+    .middle{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .carousel{
+        grid-template-columns: 1fr 2fr;
+    }
+    .allianz_logo{
+        width: 150px;
+        margin: 6px;
+    }
+    #Education{
+        grid-template-columns: 1fr 1fr;
+    }
+    #card1{
+        width: 16rem; font-size: 14px; margin: -39px 50px 10px 150px;
+    }    
+    #card2{
+        width: 16rem; font-size: 14px; margin: -39px 80px 10px 70px;
+    }
+    #Skills{
+        font-size: 16px;
+    }
+}
